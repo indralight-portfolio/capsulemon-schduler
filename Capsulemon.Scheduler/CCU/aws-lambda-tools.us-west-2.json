@@ -1,0 +1,22 @@
+{
+  "Information": [
+    "This file provides default values for the deployment wizard inside Visual Studio and the AWS Lambda commands added to the .NET Core CLI.",
+    "To learn more about the Lambda commands with the .NET Core CLI execute the following command at the command line in the project root directory.",
+    "dotnet lambda help",
+    "All the command line options for the Lambda command can be specified in this file."
+  ],
+  "profile": "capsulemon_indra",
+  "region": "us-west-2",
+  "configuration": "Release",
+  "framework": "netcoreapp2.1",
+  "function-runtime": "dotnetcore2.1",
+  "function-memory-size": 256,
+  "function-timeout": 30,
+  "function-handler": "Capsulemon.Scheduler::Capsulemon.Scheduler.Function::FunctionHandler",
+  "function-name": "Scheduler-CCU",
+  "function-role": "arn:aws:iam::000000000000:role/lambda_vpc_execution",
+  "function-subnets": "subnet-0abf4b0c2a884a016,subnet-09bdde39cca8d0989",
+  "function-security-groups": "sg-0a636a315a187d0d0",
+  "tracing-mode": "PassThrough",
+  "environment-variables": "Function=CCU"
+}
